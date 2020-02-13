@@ -5,5 +5,11 @@
     </head>
     <body>
         <p>対象：{{ url }}</p>
+        <p>対象ページ内のリンク：</p>
+        <ul>
+            {% for link_url in link_urls %}
+                <li>{{ link_url }}</li>
+            {% endfor %}
+        </ul>
     </body>
 </html>
